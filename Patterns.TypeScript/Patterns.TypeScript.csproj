@@ -1,0 +1,267 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\common\IDropdownProps.ts" />
+    <None Remove="ClientApp\src\features\patternsDemo\DropdownSelector.tsx" />
+    <None Remove="ClientApp\src\features\patternsDemo\IPatternsAction.ts" />
+    <None Remove="ClientApp\src\features\patternsDemo\IPatternsProps.ts" />
+    <None Remove="ClientApp\src\features\patternsDemo\PatternsService.ts" />
+    <None Remove="ClientApp\src\features\patternsDemo\patternsSlice.ts" />
+    <None Remove="ClientApp\src\patterns\command\Invoker.ts" />
+    <None Remove="ClientApp\src\patterns\command\Receiver.ts" />
+    <None Remove="ClientApp\src\patterns\command\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\composite\AbstractComponent.ts" />
+    <None Remove="ClientApp\src\patterns\composite\ConcreteComponentComposite.ts" />
+    <None Remove="ClientApp\src\patterns\composite\ConcreteComponentLeaf.ts" />
+    <None Remove="ClientApp\src\patterns\composite\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\AbstractComponent.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\AbstractDecorator.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\ConcreteComponent.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\ConcreteDecoratorOne.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\ConcreteDecoratorTwo.ts" />
+    <None Remove="ClientApp\src\patterns\decorator\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\facade\Facade.ts" />
+    <None Remove="ClientApp\src\patterns\facade\SubSystemA.ts" />
+    <None Remove="ClientApp\src\patterns\facade\SubSystemB.ts" />
+    <None Remove="ClientApp\src\patterns\facade\SubSystemC.ts" />
+    <None Remove="ClientApp\src\patterns\facade\SubSystemD.ts" />
+    <None Remove="ClientApp\src\patterns\facade\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\AbstractCreator.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\AbstractProduct.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\ConcreteCreatorOne.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\ConcreteCreatorTwo.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\ConcreteProductOne.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\ConcreteProductTwo.ts" />
+    <None Remove="ClientApp\src\patterns\factoryMethod\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\flyweight\AbstractFlyweight.ts" />
+    <None Remove="ClientApp\src\patterns\flyweight\ConcreteFlyweightShared.ts" />
+    <None Remove="ClientApp\src\patterns\flyweight\ConcreteFlyweightUnshared.ts" />
+    <None Remove="ClientApp\src\patterns\flyweight\FlyweightFactory.ts" />
+    <None Remove="ClientApp\src\patterns\flyweight\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\interpreter\AbstractExpression.ts" />
+    <None Remove="ClientApp\src\patterns\interpreter\Context.ts" />
+    <None Remove="ClientApp\src\patterns\interpreter\NonterminalExpression.ts" />
+    <None Remove="ClientApp\src\patterns\interpreter\TerminalExpression.ts" />
+    <None Remove="ClientApp\src\patterns\interpreter\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\iterator\Enumerable.ts" />
+    <None Remove="ClientApp\src\patterns\iterator\Enumerator.ts" />
+    <None Remove="ClientApp\src\patterns\iterator\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\AbstractColleague.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\AbstractMediator.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\ConcreteColleagueOne.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\ConcreteColleagueTwo.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\ConcreteMediator.ts" />
+    <None Remove="ClientApp\src\patterns\mediator\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\memento\CareTaker.ts" />
+    <None Remove="ClientApp\src\patterns\memento\Memento.ts" />
+    <None Remove="ClientApp\src\patterns\memento\Originator.ts" />
+    <None Remove="ClientApp\src\patterns\memento\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\observer\AbstractObserver.ts" />
+    <None Remove="ClientApp\src\patterns\observer\AbstractSubject.ts" />
+    <None Remove="ClientApp\src\patterns\observer\ConcreteObserverOne.ts" />
+    <None Remove="ClientApp\src\patterns\observer\ConcreteObserverTwo.ts" />
+    <None Remove="ClientApp\src\patterns\observer\ConcreteSubjectOne.ts" />
+    <None Remove="ClientApp\src\patterns\observer\ConcreteSubjectTwo.ts" />
+    <None Remove="ClientApp\src\patterns\observer\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\prototype\AbstractPrototype.ts" />
+    <None Remove="ClientApp\src\patterns\prototype\ConcretePrototypeOne.ts" />
+    <None Remove="ClientApp\src\patterns\prototype\ConcretePrototypeTwo.ts" />
+    <None Remove="ClientApp\src\patterns\prototype\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\proxy\AbstractSubject.ts" />
+    <None Remove="ClientApp\src\patterns\proxy\ConcreteSubject.ts" />
+    <None Remove="ClientApp\src\patterns\proxy\Proxy.ts" />
+    <None Remove="ClientApp\src\patterns\proxy\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\singleton\Singleton.ts" />
+    <None Remove="ClientApp\src\patterns\singleton\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\state\AbstractState.ts" />
+    <None Remove="ClientApp\src\patterns\state\ConcreteStateOne.ts" />
+    <None Remove="ClientApp\src\patterns\state\ConcreteStateTwo.ts" />
+    <None Remove="ClientApp\src\patterns\state\Context.ts" />
+    <None Remove="ClientApp\src\patterns\state\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\strategy\AbstractStrategy.ts" />
+    <None Remove="ClientApp\src\patterns\strategy\ConcreteStrategyOne.ts" />
+    <None Remove="ClientApp\src\patterns\strategy\ConcreteStrategyTwo.ts" />
+    <None Remove="ClientApp\src\patterns\strategy\Context.ts" />
+    <None Remove="ClientApp\src\patterns\strategy\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\templateMethod\AbstractProduct.ts" />
+    <None Remove="ClientApp\src\patterns\templateMethod\ConcreteProductOne.ts" />
+    <None Remove="ClientApp\src\patterns\templateMethod\ConcreteProductTwo.ts" />
+    <None Remove="ClientApp\src\patterns\templateMethod\UseCase.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\AbstractElement.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\AbstractVisitor.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\ConcreteElementOne.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\ConcreteElementTwo.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\ConcreteVisitorOne.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\ConcreteVisitorTwo.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\ObjectStructure.ts" />
+    <None Remove="ClientApp\src\patterns\visitor\UseCase.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.3" />
+  </ItemGroup> 
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\common\IDropdownProps.ts" />
+    <TypeScriptCompile Include="ClientApp\src\common\DropdownSelector.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\IPatternsAction.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\IPatternsProps.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\PatternsOutput.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\IPatternsState.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\PatternsData.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\PatternsService.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\patternsSlice.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\AbstractImplementor.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\Abstraction.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\ConcreteImplementorOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\ConcreteImplementorTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\RefinedAbstraction.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\bridge\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\AbstractBuilder.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\ConcreteBuilderOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\ConcreteBuilderTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\Director.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\Product.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\builder\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\chainOfResponsibility\AbstractHandler.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\chainOfResponsibility\ConcreteHandlerOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\chainOfResponsibility\ConcreteHandlerTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\chainOfResponsibility\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\command\AbstractCommand.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\command\ConcreteCommand.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\command\Invoker.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\command\Receiver.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\command\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\composite\AbstractComponent.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\composite\ConcreteComponentComposite.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\composite\ConcreteComponentLeaf.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\composite\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\AbstractComponent.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\AbstractDecorator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\ConcreteComponent.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\ConcreteDecoratorOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\ConcreteDecoratorTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\decorator\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\Facade.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\SubSystemA.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\SubSystemB.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\SubSystemC.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\SubSystemD.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\facade\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\AbstractCreator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\AbstractProduct.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\ConcreteCreatorOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\ConcreteCreatorTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\ConcreteProductOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\ConcreteProductTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\factoryMethod\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\flyweight\AbstractFlyweight.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\flyweight\ConcreteFlyweightShared.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\flyweight\ConcreteFlyweightUnshared.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\flyweight\FlyweightFactory.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\flyweight\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\interpreter\AbstractExpression.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\interpreter\Context.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\interpreter\NonterminalExpression.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\interpreter\TerminalExpression.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\interpreter\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\iterator\Enumerable.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\iterator\Enumerator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\iterator\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\AbstractColleague.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\AbstractMediator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\ConcreteColleagueOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\ConcreteColleagueTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\ConcreteMediator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\mediator\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\memento\CareTaker.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\memento\Memento.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\memento\Originator.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\memento\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\AbstractObserver.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\AbstractSubject.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\ConcreteObserverOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\ConcreteObserverTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\ConcreteSubjectOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\ConcreteSubjectTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\observer\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\PatternUseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\PatternType.ts" />
+    <TypeScriptCompile Include="ClientApp\src\features\patternsDemo\PatternsPage.tsx" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\prototype\AbstractPrototype.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\prototype\ConcretePrototypeOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\prototype\ConcretePrototypeTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\prototype\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\proxy\AbstractSubject.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\proxy\ConcreteSubject.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\proxy\Proxy.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\proxy\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\singleton\Singleton.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\singleton\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\state\AbstractState.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\state\ConcreteStateOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\state\ConcreteStateTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\state\Context.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\state\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\strategy\AbstractStrategy.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\strategy\ConcreteStrategyOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\strategy\ConcreteStrategyTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\strategy\Context.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\strategy\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\templateMethod\AbstractProduct.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\templateMethod\ConcreteProductOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\templateMethod\ConcreteProductTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\templateMethod\UseCase.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\AbstractElement.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\AbstractVisitor.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\ConcreteElementOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\ConcreteElementTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\ConcreteVisitorOne.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\ConcreteVisitorTwo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\ObjectStructure.ts" />
+    <TypeScriptCompile Include="ClientApp\src\patterns\visitor\UseCase.ts" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)build\**; $(SpaRoot)build-ssr\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
