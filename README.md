@@ -1,6 +1,6 @@
 # Patterns.TypeScript
 Sample cross-platform single-page app that is built with ASP.NET Core, React, Redux application template from Visual Studio 
-to demonstrate 23 GoF design patterns via TypeScript using simplistic samples.
+to demonstrate 23 GoF design patterns via TypeScript programming language using simplistic samples.
 
 ### Prerequisites 
 In order to run the application, you need Visual Studio to be up and running on your computer (both PC and MAC are eligible).
