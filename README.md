@@ -1,5 +1,5 @@
 # Patterns.TypeScript
-Sample cross-platform app that is built with ASP.NET Core, React, Redux application template from Visual Studio 
+Sample cross-platform single-page app that is built with ASP.NET Core, React, Redux application template from Visual Studio 
 to demonstrate 23 GoF design patterns via TypeScript using simplistic samples.
 
 ### Prerequisites 
