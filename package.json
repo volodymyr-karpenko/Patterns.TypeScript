@@ -1,0 +1,35 @@
+{
+  "name": "patterns.typescript",
+  "version": "1.0.0",
+  "description": "Demonstrate 23 GoF design patterns via TypeScript programming language using simplistic samples.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run check && node dist/index.js",
+    "check": "node -e '!fs.existsSync(\"dist\") && process.exit(1)' || npm run build",
+    "build": "tsc",
+    "lint": "eslint --fix ./src/**",
+    "format": "prettier ./src --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volodymyr-karpenko/Patterns.TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volodymyr-karpenko/Patterns.TypeScript/issues"
+  },
+  "homepage": "https://github.com/volodymyr-karpenko/Patterns.TypeScript#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.5.0",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.57.1"
+  }
+}
